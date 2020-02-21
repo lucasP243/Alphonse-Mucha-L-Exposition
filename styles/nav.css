@@ -1,0 +1,123 @@
+#nav
+{
+    display: block;
+    position: relative;
+    top: 200%;
+    border: 3px solid #EEE;
+    background-color: rgba(215, 215, 215, 0.9);
+    
+    font-family: "Calibri";
+    font-size: 1.25em;
+    
+    margin: 3em auto;
+    
+    width: 8em;
+    
+    transition-property: top;
+    transition-duration: 1s;
+}
+
+#navbox:target #nav
+{
+    top: 0;
+}
+
+#nav ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#nav li
+{
+    max-height: 2em;
+    
+    display: block;
+    font-weight: bold;
+    list-style: none;
+    
+    padding: 1em;
+}
+
+#nav li:hover
+{
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+#nav a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#nav a:link
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#nav a:visited
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#nav #active
+{
+    text-decoration: underline;
+    text-decoration-color: #FFF;
+}
+
+#nav #entete
+{
+    background: url(../images/menu_icon.png) no-repeat;
+    background-position: left;
+    background-size: 2em;
+}
+
+#nav #entete a
+{
+    margin-left: 2.5em;
+}
+
+/*
+    Gestion du bouton d'ouverture/fermeture du menu
+*/
+
+#navOpenClose
+{
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#navOpenClose a
+{
+    background: url(../images/menu_icon.png) no-repeat;
+    background-color: #444;
+    background-size: contain;
+    border: 0.3em solid #DDD;
+    
+    display: block;
+    
+    height: inherit;
+    width: inherit;
+}
+
+#navOpenClose .close
+{
+    display: none;
+}
+
+#navbox:target .open
+{
+    display: none;
+}
+
+#navbox:target .close
+{
+    display: block
+}

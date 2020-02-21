@@ -1,0 +1,91 @@
+/*
+Mise en forme de l'entête : 
+
+Barre horizontale rouge, fixée sur le haut de la page
+Logo + titre + logo, tout le long de l'entête
+*/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    height: 15%;
+    width: 100%;
+    
+    background-color: #AD1F1F;
+    border-bottom: 0.3em solid #6C1313;
+}
+
+.h_logo
+{
+    float: left;
+    
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.h_logo img
+{
+    position: relative;
+    top: -3vw;
+    
+    width: 100%;
+}
+
+#h_name
+{
+    display: table;
+    float: left;
+    
+    text-decoration: none;
+    
+    height: 100%;
+    width: 60%;
+}
+
+#h_name h1
+{
+    display: table-cell;
+    
+    font-family: Titre1;
+    font-size: 3vw;
+    color: #DDD;
+    text-align: center;
+    vertical-align: middle;
+    
+    margin: auto;
+}
+
+@media (max-height: 480px)
+{
+    #h_name h1 {font-size: 8vh;}
+}
+
+@media (max-width: 870px)
+{
+    #h_name h1 {font-size: 3vw;}
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    min-height: height: 2.5em;
+    
+    background-color: rgba(1,1,1,0.5);
+}
+
+footer .credits
+{
+    color: #FFF;
+    font-size: 0.8em;
+    font-weight: bold;
+    
+    text-align: center;
+}

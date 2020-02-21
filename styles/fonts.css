@@ -1,0 +1,20 @@
+/*
+Feuille de style de définition des polices d'écriture
+*/
+@font-face
+{
+    font-family: "Titre1";
+    src: url(../fonts/magic_dafont.otf);
+}
+
+@font-face
+{
+    font-family: "Titre2";
+    src: url(../fonts/SERIM___.ttf);
+}
+
+@font-face
+{
+    font-family: "Legende";
+    src: url(../fonts/TypoSlab_demo.otf);
+}

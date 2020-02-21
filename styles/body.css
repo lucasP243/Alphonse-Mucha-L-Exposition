@@ -1,0 +1,159 @@
+body
+{
+    background: url(../images/background.jpg) repeat-y;
+    background-size: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    margin: 0;
+    
+    height: 100vh;
+    width: 100vw;
+}
+
+#navbox
+{
+    background: url(../images/motif_ascd.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    overflow-x: visible;
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    width: 20%;
+    height: 85%;
+}
+
+#content
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: -1;
+    
+    margin-top: 0;
+        
+    width: 80%;
+    height: 85%;
+}
+
+.acc_nav
+{
+    position: relative;
+    display: block;
+    width: 90%;
+    height: 40%;
+    
+    background-size: cover;
+    background-position: top 35% left 50%;
+    
+    margin: 1em auto;
+    border: 2px solid grey;
+}
+
+.acc_nav p
+{
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    font-family: Legende;
+    color: #FFF;
+    text-decoration: none;
+    
+    height: 1.5em;
+    width: 100%;
+}
+
+.acc_nav:hover p
+{
+    background-color: rgba(173, 31, 31, 0.8);
+}
+
+#bio
+{
+    background-image: url(../images/acc_bio.jpg);
+}
+
+#oeuvres
+{
+    background-image: url(../images/acc_oeuvres.jpg);
+}
+
+#expo
+{
+    background-image: url(../images/acc_expo.jpg);
+}
+
+section
+{
+    /*
+    Le contenu de la page web s'affiches dans plusieurs blocs blancs, à l'image d'une page de papier.
+    */
+    
+    width: 95%;
+    min-height: 5em;
+    height: auto;
+    
+    margin: 2em auto;
+    padding: 1em;
+    
+    background-color: #FFF;
+    border: 0.3em solid #BBB;
+    border-radius: 1em;
+    
+    color: #6C1313;
+    text-align: justify;
+}
+
+section h2
+{
+    font-family: Titre2;
+}
+
+figure img
+{
+    max-height: none !important;
+    max-width: none !important;
+}
+
+/* 
+disp2b : mise en forme d'un article en 2 blocs gauche / droite
+*/
+.disp2b
+{
+    overflow: hidden;
+}
+
+.disp2b div
+{
+    float : left;
+    width: 50%;
+}
+
+.disp2b div *
+{
+    display: block;
+    margin: 1em auto;
+    max-width: 90%;
+}
+
+.disp2b div img
+{
+    max-height: 25em;
+    width: auto;
+}
+
+.quote
+{
+    color: #AD1F1F;
+}

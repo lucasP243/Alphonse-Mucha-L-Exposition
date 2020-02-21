@@ -1,0 +1,46 @@
+@media all and (max-width: 1080px)
+{
+    #navbox
+    {
+        background: none;
+        
+        position: relative;
+        top: 15%;
+        overflow: hidden;
+        
+        height: 3em;
+    }
+    
+    #nav
+    {
+        position: fixed;
+        left: 3em;
+    }
+    
+    #content
+    {
+        margin-top: 1em;
+        width: 100%;
+    }
+    
+    section
+    {
+        width: 80%;
+    }
+    
+    .disp2b div
+    {
+        float: none;
+        width: 100%;
+    }
+    
+    .disp2b div *
+    {
+        max-height: none;
+    }
+    
+    figure
+    {
+        display: none !important;
+    }
+}
